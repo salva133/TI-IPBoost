@@ -7,11 +7,32 @@
       "AI_projectRole": "DevelopNation",
       "researchCost": 50,
       "effects": [
-         "IPBoost_Effect_AllPriorityBonus200",
-         "IPBoost_Effect_ShipConstructionTimeReduction20"
+         "IPBoost_Effect_AllPriorityBonus200"
       ],
       "oneTimeGlobally": false,
       "repeatable": true,
+      "factionPrereq": [
+         "DestroyCouncil"
+      ],
+      "factionAvailableChance": 100,
+      "factionAlways": "DestroyCouncil",
+      "initialUnlockChance": 100,
+      "deltaUnlockChance": 0,
+      "maxUnlockChance": 100,
+      "resourcesGranted": []
+   },
+   {
+      "friendlyName": "Advanced Shipyard Methods",
+      "dataName": "IPBoost_Project_AdvancedShipyardMethods",
+      "techCategory": "SpaceScience",
+      "AI_techRole": "SpaceDevelopment",
+      "AI_projectRole": "Fleet",
+      "researchCost": 50,
+      "effects": [
+         "IPBoost_Effect_ShipConstructionTimeReduction20"
+      ],
+      "oneTimeGlobally": false,
+      "repeatable": false,
       "factionPrereq": [
          "DestroyCouncil"
       ],

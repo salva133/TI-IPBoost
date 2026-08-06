@@ -30,7 +30,7 @@
    {
       "dataName": "IPBoost_Effect_ShipConstructionTimeReduction20",
       "operation": "Multiplicative",
-      "value": 0.8,
+      "value": 0.01,
       "effectTarget": "SourceFaction",
       "effectDuration": "permanent",
       "stackable": true,
