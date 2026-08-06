@@ -1,0 +1,14 @@
+{
+   "Title": "IPBoost",
+   "Author": "Steve",
+   "Description": "Adds a repeatable, faction-private project for Humanity First. Each completion permanently increases the Investment Points our control points direct into every national priority by 200% and reduces ship construction time by 20%. Both bonuses stack with each repeat and affect only our own faction.",
+   "Version": "2.1.0",
+   "GameVersion": "1.0.26",
+   "ModURL": "",
+   "TemplatesToConcatArrays": [
+      "TIProjectTemplate.json",
+      "TIEffectTemplate.json",
+      "TIProjectTemplate.en",
+      "TIEffectTemplate.en"
+   ]
+}

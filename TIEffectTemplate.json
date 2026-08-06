@@ -1,0 +1,42 @@
+[
+   {
+      "dataName": "IPBoost_Effect_AllPriorityBonus200",
+      "operation": "Additive",
+      "value": 2.0,
+      "effectTarget": "SourceFaction",
+      "effectDuration": "permanent",
+      "stackable": true,
+      "duration_months": -1,
+      "contexts": [
+         "EconomyPriority",
+         "WelfarePriority",
+         "KnowledgePriority",
+         "UnityPriority",
+         "GovernmentPriority",
+         "EnvironmentPriority",
+         "MilitaryPriority",
+         "OppressionPriority",
+         "SpoilsPriority",
+         "LaunchFacilitiesPriority",
+         "MissionControlPriority",
+         "SpaceflightPriority",
+         "BuildArmyPriority",
+         "UpgradeArmyPriority",
+         "BuildSpaceDefensesPriority",
+         "BuildSTOSquadronPriority",
+         "BuildNuclearWeaponsPriority"
+      ]
+   },
+   {
+      "dataName": "IPBoost_Effect_ShipConstructionTimeReduction20",
+      "operation": "Multiplicative",
+      "value": 0.8,
+      "effectTarget": "SourceFaction",
+      "effectDuration": "permanent",
+      "stackable": true,
+      "duration_months": -1,
+      "contexts": [
+         "ShipConstructionTime"
+      ]
+   }
+]

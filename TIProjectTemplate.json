@@ -1,0 +1,25 @@
+[
+   {
+      "friendlyName": "Directed Investment Reform",
+      "dataName": "IPBoost_Project_DirectedInvestmentReform",
+      "techCategory": "SocialScience",
+      "AI_techRole": "Income",
+      "AI_projectRole": "DevelopNation",
+      "researchCost": 50,
+      "effects": [
+         "IPBoost_Effect_AllPriorityBonus200",
+         "IPBoost_Effect_ShipConstructionTimeReduction20"
+      ],
+      "oneTimeGlobally": false,
+      "repeatable": true,
+      "factionPrereq": [
+         "DestroyCouncil"
+      ],
+      "factionAvailableChance": 100,
+      "factionAlways": "DestroyCouncil",
+      "initialUnlockChance": 100,
+      "deltaUnlockChance": 0,
+      "maxUnlockChance": 100,
+      "resourcesGranted": []
+   }
+]
