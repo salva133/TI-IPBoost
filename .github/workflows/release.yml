@@ -1,7 +1,5 @@
 name: Release
 
-# A release is cut by bumping Version in ModInfo.json, which is the version the
-# game shows anyway. Any other push leaves the released archives alone.
 on:
   push:
     branches: [master]

@@ -12,8 +12,5 @@ permissions:
 jobs:
   validate:
     uses: salva133/My-Workflows/.github/workflows/validate-ti-mod.yml@latest
-    # The settings live here rather than in a file beside the mod, because the
-    # game's mod manager parses every .json under the mod folder and refuses to
-    # install a mod when one of them is not a template array.
     with:
       id_prefixes: IPBoost_
