@@ -1,8 +1,8 @@
 {
    "Title": "IPBoost",
    "Author": "Steve",
-   "Description": "Adds two faction-private projects for Humanity First. Directed Investment Reform is repeatable and increases the Investment Points our control points direct into every national priority by 200% per completion. Advanced Shipyard Methods is a one-time project that reduces ship construction time by 20%.",
-   "Version": "2.2.0",
+   "Description": "Adds two faction-private projects for Humanity First. Directed Investment Reform is repeatable and increases the Investment Points our control points direct into every national priority. Advanced Shipyard Methods is a one-time project that cuts ship construction time to a fraction. Effect identifiers carry no magnitudes, so tuning the values never invalidates a save.",
+   "Version": "3.0.0",
    "GameVersion": "1.0.26",
    "ModURL": "",
    "TemplatesToConcatArrays": [

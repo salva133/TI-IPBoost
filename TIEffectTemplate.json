@@ -1,6 +1,6 @@
 [
    {
-      "dataName": "IPBoost_Effect_AllPriorityBonus200",
+      "dataName": "IPBoost_Effect_AllPriorityBonus",
       "operation": "Additive",
       "value": 2.0,
       "effectTarget": "SourceFaction",
@@ -28,7 +28,7 @@
       ]
    },
    {
-      "dataName": "IPBoost_Effect_ShipConstructionTimeReduction20",
+      "dataName": "IPBoost_Effect_ShipConstructionTimeReduction",
       "operation": "Multiplicative",
       "value": 0.01,
       "effectTarget": "SourceFaction",

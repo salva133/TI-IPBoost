@@ -7,7 +7,7 @@
       "AI_projectRole": "DevelopNation",
       "researchCost": 50,
       "effects": [
-         "IPBoost_Effect_AllPriorityBonus200"
+         "IPBoost_Effect_AllPriorityBonus"
       ],
       "oneTimeGlobally": false,
       "repeatable": true,
@@ -29,7 +29,7 @@
       "AI_projectRole": "Fleet",
       "researchCost": 50,
       "effects": [
-         "IPBoost_Effect_ShipConstructionTimeReduction20"
+         "IPBoost_Effect_ShipConstructionTimeReduction"
       ],
       "oneTimeGlobally": false,
       "repeatable": false,
