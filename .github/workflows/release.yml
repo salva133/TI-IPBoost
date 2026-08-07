@@ -1,0 +1,24 @@
+name: Release
+
+# A release is cut by bumping Version in ModInfo.json, which is the version the
+# game shows anyway. Any other push leaves the released archives alone.
+on:
+  push:
+    branches: [master]
+    paths: [ModInfo.json]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    uses: salva133/My-Workflows/.github/workflows/validate-ti-mod.yml@latest
+
+  release:
+    needs: validate
+    permissions:
+      contents: write
+    uses: salva133/My-Workflows/.github/workflows/release-ti-mod.yml@latest
+    with:
+      folder_name: IPBoost
