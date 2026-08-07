@@ -83,10 +83,6 @@ Invicta itself; tuning happens through the `value` field.
 | `.gitattributes` | Automatic LF normalization for text files |
 | `.github/workflows/` | Validation on every push and pull request, release on a version bump |
 
-Nothing under `.github` belongs to the mod, and none of it is JSON — the validator's settings
-live in the workflow rather than in a file beside the templates, because the game's mod
-manager would try to read such a file as a template.
-
 All four template files are listed in `ModInfo.json` under `TemplatesToConcatArrays`. They do
 not replace the vanilla data — they are appended to the existing arrays, which keeps the mod
 compatible with other mods as long as those do not use the same `dataName` entries.
