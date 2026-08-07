@@ -81,7 +81,6 @@ Invicta itself; tuning happens through the `value` field.
 | `TIProjectTemplate.en` | English strings: display name, summary and description per project |
 | `TIEffectTemplate.en` | English effect descriptions |
 | `.gitattributes` | Automatic LF normalization for text files |
-| `.github/ti-validate.json` | Which identifier prefixes the checks hold the mod to |
 | `.github/workflows/` | Validation on every push and pull request, release on a version bump |
 
 All four template files are listed in `ModInfo.json` under `TemplatesToConcatArrays`. They do
@@ -93,10 +92,9 @@ effect value when it displays the effect description.
 
 ## Installation
 
-1. Create an `IPBoost` folder inside the Terra Invicta mods directory:
-   `Documents\My Games\TerraInvicta\Mods\IPBoost`
-2. Copy the contents of this repository into it (at minimum `ModInfo.json` and the four
-   template files).
+1. Download `IPBoost-v<version>.zip` from the [releases](../../releases).
+2. Unpack the `IPBoost` folder from it into the Terra Invicta mods directory:
+   `Documents\My Games\TerraInvicta\Mods\`
 3. Start Terra Invicta and enable the mod in the mod menu.
 
 The projects only appear in a game played as **Humanity First**.
