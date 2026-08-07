@@ -14,6 +14,8 @@ permissions:
 jobs:
   validate:
     uses: salva133/My-Workflows/.github/workflows/validate-ti-mod.yml@latest
+    with:
+      id_prefixes: IPBoost_
 
   release:
     needs: validate

@@ -81,8 +81,11 @@ Invicta itself; tuning happens through the `value` field.
 | `TIProjectTemplate.en` | English strings: display name, summary and description per project |
 | `TIEffectTemplate.en` | English effect descriptions |
 | `.gitattributes` | Automatic LF normalization for text files |
-| `.github/ti-validate.json` | Which identifier prefixes the checks hold the mod to |
 | `.github/workflows/` | Validation on every push and pull request, release on a version bump |
+
+Nothing under `.github` belongs to the mod, and none of it is JSON — the validator's settings
+live in the workflow rather than in a file beside the templates, because the game's mod
+manager would try to read such a file as a template.
 
 All four template files are listed in `ModInfo.json` under `TemplatesToConcatArrays`. They do
 not replace the vanilla data — they are appended to the existing arrays, which keeps the mod
@@ -93,11 +96,16 @@ effect value when it displays the effect description.
 
 ## Installation
 
-1. Create an `IPBoost` folder inside the Terra Invicta mods directory:
-   `Documents\My Games\TerraInvicta\Mods\IPBoost`
-2. Copy the contents of this repository into it (at minimum `ModInfo.json` and the four
-   template files).
+1. Download `IPBoost-v<version>.zip` from the [releases](../../releases).
+2. Unpack the `IPBoost` folder from it into the Terra Invicta mods directory:
+   `Documents\My Games\TerraInvicta\Mods\`
 3. Start Terra Invicta and enable the mod in the mod menu.
+
+Do **not** copy the whole repository into the mods directory. Terra Invicta's mod manager
+parses every `.json` file it finds anywhere under a mod folder and expects each one to be a
+template array, so a tooling file that happens to be JSON stops the mod from installing with
+*MOD MANAGER FAILED TO LOAD JSON*. The release archive holds only `ModInfo.json`, the four
+template files and this README. Installing by hand means copying exactly those five files.
 
 The projects only appear in a game played as **Humanity First**.
 
