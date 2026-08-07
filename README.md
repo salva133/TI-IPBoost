@@ -101,12 +101,6 @@ effect value when it displays the effect description.
    `Documents\My Games\TerraInvicta\Mods\`
 3. Start Terra Invicta and enable the mod in the mod menu.
 
-Do **not** copy the whole repository into the mods directory. Terra Invicta's mod manager
-parses every `.json` file it finds anywhere under a mod folder and expects each one to be a
-template array, so a tooling file that happens to be JSON stops the mod from installing with
-*MOD MANAGER FAILED TO LOAD JSON*. The release archive holds only `ModInfo.json`, the four
-template files and this README. Installing by hand means copying exactly those five files.
-
 The projects only appear in a game played as **Humanity First**.
 
 ## Tuning the values
