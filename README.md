@@ -81,6 +81,8 @@ Invicta itself; tuning happens through the `value` field.
 | `TIProjectTemplate.en` | English strings: display name, summary and description per project |
 | `TIEffectTemplate.en` | English effect descriptions |
 | `.gitattributes` | Automatic LF normalization for text files |
+| `.github/ti-validate.json` | Which identifier prefixes the checks hold the mod to |
+| `.github/workflows/` | Validation on every push and pull request, release on a version bump |
 
 All four template files are listed in `ModInfo.json` under `TemplatesToConcatArrays`. They do
 not replace the vanilla data — they are appended to the existing arrays, which keeps the mod
@@ -128,3 +130,22 @@ hundredth, is intended as a significant leg up rather than a balanced expansion.
   time effect; set the construction time multiplier to `0.01`; expanded the project strings.
 * **Initial** – *Directed Investment Reform* with the priority effect across all 17 contexts,
   the mod scaffolding and localization.
+
+## Continuous integration
+
+Every push and pull request runs the Terra Invicta mod validator from
+[`salva133/My-Workflows`](https://github.com/salva133/My-Workflows). It reads the mod the way
+the game does and reports what the game would swallow in silence:
+
+* `ModInfo.json` parses, carries the fields the mod menu reads, and lists every template file
+  present — a template missing from `TemplatesToConcatArrays` is a file the game never opens.
+* Every template holds an array of records, each with its own `dataName`, and no `dataName` is
+  defined twice.
+* Every `IPBoost_` name a record points at resolves to a record the mod defines, so a typo in
+  a project's `effects` list is caught rather than silently dropping the effect.
+* Every localization key addresses a record that exists, no key is defined twice, and the
+  `{n}` placeholders agree across languages.
+
+A release is cut by bumping `Version` in `ModInfo.json` and pushing to `master`: the checks run
+again, and a green run publishes `IPBoost-v<version>.zip` — an `IPBoost` folder ready to drop
+into the mods directory — as a GitHub release tagged `v<version>`.
