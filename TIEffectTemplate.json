@@ -38,5 +38,17 @@
       "contexts": [
          "ShipConstructionTime"
       ]
+   },
+   {
+      "dataName": "IPBoost_Effect_ControlPointCapIncrease",
+      "operation": "Additive",
+      "value": -100000.0,
+      "effectTarget": "SourceFaction",
+      "effectDuration": "permanent",
+      "stackable": false,
+      "duration_months": -1,
+      "contexts": [
+         "ControlPointMaintenance"
+      ]
    }
 ]

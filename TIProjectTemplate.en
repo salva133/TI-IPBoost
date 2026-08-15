@@ -4,3 +4,6 @@ TIProjectTemplate.description.IPBoost_Project_DirectedInvestmentReform=A repeata
 TIProjectTemplate.displayName.IPBoost_Project_AdvancedShipyardMethods=Advanced Shipyard Methods
 TIProjectTemplate.summary.IPBoost_Project_AdvancedShipyardMethods=Our yards adopt modular assembly and continuous-flow fitting, cutting the time between keel and commissioning.
 TIProjectTemplate.description.IPBoost_Project_AdvancedShipyardMethods=A one-time program. On completion, our shipyards permanently build ships faster. Only our own faction benefits.
+TIProjectTemplate.displayName.IPBoost_Project_GlobalAdministrativeApparatus=Global Administrative Apparatus
+TIProjectTemplate.summary.IPBoost_Project_GlobalAdministrativeApparatus=We build the clerks, couriers and case files needed to run a planet, so that no number of control points can outgrow our ability to administer them.
+TIProjectTemplate.description.IPBoost_Project_GlobalAdministrativeApparatus=A one-time program. On completion, our control point management capacity rises so far beyond any reachable number of control points that maintenance costs and overage penalties never apply again. Only our own faction benefits.

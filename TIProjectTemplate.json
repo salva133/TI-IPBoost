@@ -42,5 +42,27 @@
       "deltaUnlockChance": 0,
       "maxUnlockChance": 100,
       "resourcesGranted": []
+   },
+   {
+      "friendlyName": "Global Administrative Apparatus",
+      "dataName": "IPBoost_Project_GlobalAdministrativeApparatus",
+      "techCategory": "SocialScience",
+      "AI_techRole": "EarthPolitics",
+      "AI_projectRole": "ControlPointCap",
+      "researchCost": 50,
+      "effects": [
+         "IPBoost_Effect_ControlPointCapIncrease"
+      ],
+      "oneTimeGlobally": false,
+      "repeatable": false,
+      "factionPrereq": [
+         "DestroyCouncil"
+      ],
+      "factionAvailableChance": 100,
+      "factionAlways": "DestroyCouncil",
+      "initialUnlockChance": 100,
+      "deltaUnlockChance": 0,
+      "maxUnlockChance": 100,
+      "resourcesGranted": []
    }
 ]
